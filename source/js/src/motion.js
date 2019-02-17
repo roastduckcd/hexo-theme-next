@@ -1,5 +1,5 @@
 /* global NexT, CONFIG */
-
+var sidebarToggleMotion;
 $(document).ready(function() {
   NexT.motion = {};
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
   var SIDEBAR_DISPLAY_DURATION = 200;
   var xPos, yPos;
 
-  var sidebarToggleMotion = {
+  sidebarToggleMotion = {
     toggleEl        : $('.sidebar-toggle'),
     dimmerEl        : $('#sidebar-dimmer'),
     sidebarEl       : $('.sidebar'),
@@ -105,9 +105,10 @@ $(document).ready(function() {
         .on('sidebar.isHiding', function() {
         });
     },
-    clickHandler: function() {
+    clickHandler: function(e) {
       this.isSidebarVisible ? this.hideSidebar() : this.showSidebar();
       this.isSidebarVisible = !this.isSidebarVisible;
+      event.stopPropagation();
     },
     mouseEnterHandler: function() {
       if (this.isSidebarVisible) {
