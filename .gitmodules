@@ -1,3 +1,4 @@
 [submodule "source/lib/fancybox"]
 	path = source/lib/fancybox
-	url = git@github.com:roastduckcd/theme-next-fancybox3.git
+	url = https://github.com/roastduckcd/theme-next-fancybox3.git
+	#url = git@github.com:roastduckcd/theme-next-fancybox3.git
