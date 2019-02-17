@@ -2,3 +2,6 @@
 	path = source/lib/fancybox
 	url = https://github.com/roastduckcd/theme-next-fancybox3.git
 	#url = git@github.com:roastduckcd/theme-next-fancybox3.git
+[submodule "source/lib/needsharebutton"]
+	path = source/lib/needsharebutton
+	url = https://github.com/roastduckcd/theme-next-needmoreshare2.git
