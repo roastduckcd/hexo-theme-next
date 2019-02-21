@@ -1,6 +1,7 @@
 {% extends '_layout.swig' %}
 {% import '_macro/sidebar.swig' as sidebar_template %}
 
+  <!-- 网页标题 -->
   {% block title %}{#
   #}{% set page_title_suffix = ' | ' + title %}{#
 
