@@ -11,7 +11,13 @@
 {% block content %}
   <section id="posts" class="posts-expand">
     {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
+        {##### 遍历分类，如果是 gossip 则不在主页渲染 #####}
+        {%for cat in post.categories%}
+            {% if cat.length and cat.name !== "gossip" %} 
+                {{ post_template.render(post, true) }}
+            {% endif%}
+        {% endfor %}
+       
     {% endfor %}
   </section>
 
