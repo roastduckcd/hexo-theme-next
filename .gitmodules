@@ -5,3 +5,9 @@
 [submodule "source/lib/needsharebutton"]
 	path = source/lib/needsharebutton
 	url = https://github.com/roastduckcd/theme-next-needmoreshare2.git
+[submodule "source/lib/pace"]
+	path = source/lib/pace
+	url = https://github.com/theme-next/theme-next-pace
+[submodule "source/lib/jquery_lazyload"]
+	path = source/lib/jquery_lazyload
+	url = https://github.com/theme-next/theme-next-jquery-lazyload
