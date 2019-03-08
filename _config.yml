@@ -536,21 +536,22 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid: Ck2z7fsTPsdmwBD4N3JjmNRG-gzGzoHsz # your leancloud application appid
+  appkey: JXRAAfxGqYDsVLnOGO5Fcc4u # your leancloud application appkey
+  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  placeholder: 各位道友，请举手发言 # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
+
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC80MjY0Mi8xOTE4OQ==
+# livere_uid: MTAyMC80MjY0Mi8xOTE4OQ==
 
 
 # DaoVoice Online contact 
@@ -1044,14 +1045,10 @@ vendors:
   # See: https://www.npmjs.com/package/leancloud-storage
   # Example:
   # leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
-  leancloud:
+  # leancloud: //cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js
 
-  # valine
-  # See: https://github.com/xCss/Valine
-  # Example:
-  # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-  # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  valine:
+    
+
 
   # gitalk
   # See: https://github.com/gitalk/gitalk
